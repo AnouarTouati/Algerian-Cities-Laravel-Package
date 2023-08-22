@@ -11,14 +11,14 @@
     "require": {},
     "autoload":{
         "psr-4":{
-            "AnouarTouati\\AlgerianCities\\":"src/",
-            "AnouarTouati\\AlgerianCities\\Database\\Seeders\\":"database/seeders/"
+            "AnouarTouati\\AlgerianCitiesLaravel\\":"src/",
+            "AnouarTouati\\AlgerianCitiesLaravel\\Database\\Seeders\\":"database/seeders/"
         }
     },
     "extra":{
         "laravel":{
             "providers":[
-                "AnouarTouati\\AlgerianCities\\AlgerianCitiesServiceProvider"
+                "AnouarTouati\\AlgerianCitiesLaravel\\AlgerianCitiesServiceProvider"
             ]
         }
     },

@@ -1,6 +1,6 @@
 <?php
 
-use AnouarTouati\AlgerianCities\AlgerianCitiesApiController;
+use AnouarTouati\AlgerianCitiesLaravel\AlgerianCitiesApiController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 

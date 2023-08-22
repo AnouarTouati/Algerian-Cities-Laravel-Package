@@ -1,5 +1,5 @@
 <?php
-namespace AnouarTouati\AlgerianCities;
+namespace AnouarTouati\AlgerianCitiesLaravel;
 use Illuminate\Support\ServiceProvider;
 
 class AlgerianCitiesServiceProvider extends ServiceProvider{

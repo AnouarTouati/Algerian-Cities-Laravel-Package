@@ -1,7 +1,7 @@
 <?php
-namespace AnouarTouati\AlgerianCities\Database\Seeders;
+namespace AnouarTouati\AlgerianCitiesLaravel\Database\Seeders;
 
-use AnouarTouati\AlgerianCities\PostOffice;
+use AnouarTouati\AlgerianCitiesLaravel\PostOffice;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Log;

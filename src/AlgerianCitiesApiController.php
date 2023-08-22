@@ -1,6 +1,6 @@
 <?php
 
-namespace AnouarTouati\AlgerianCities;
+namespace AnouarTouati\AlgerianCitiesLaravel;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;

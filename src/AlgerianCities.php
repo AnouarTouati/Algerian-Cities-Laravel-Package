@@ -1,5 +1,5 @@
 <?php
-namespace AnouarTouati\AlgerianCities;
+namespace AnouarTouati\AlgerianCitiesLaravel;
 
 class AlgerianCities {
 
