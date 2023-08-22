@@ -2,9 +2,7 @@
 
 namespace Tests\Feature;
 
-use AnouarTouati\AlgerianCities\AlgerianCities;
-use Illuminate\Foundation\Testing\RefreshDatabase;
-use Illuminate\Foundation\Testing\WithFaker;
+use AnouarTouati\AlgerianCitiesLaravel\AlgerianCities;
 use Illuminate\Support\Facades\Log;
 use Tests\TestCase;
 
