@@ -1,0 +1,25 @@
+{
+    "name": "anouar-touati/algerian-cities-laravel",
+    "description": "A package to facilitate working with algerian cities dataset in Laravel",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Anouar Touati",
+            "email": "anouar.touati.at@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload":{
+        "psr-4":{
+            "AnouarTouati\\AlgerianCities\\":"src/",
+            "AnouarTouati\\AlgerianCities\\Database\\Seeders\\":"database/seeders/"
+        }
+    },
+    "extra":{
+        "laravel":{
+            "providers":[
+                "AnouarTouati\\AlgerianCities\\AlgerianCitiesServiceProvider"
+            ]
+        }
+    }
+}
