@@ -3,7 +3,6 @@
 namespace Tests\Feature;
 
 use AnouarTouati\AlgerianCitiesLaravel\AlgerianCities;
-use Illuminate\Support\Facades\Log;
 use Tests\TestCase;
 
 class APITest extends TestCase
@@ -107,7 +106,6 @@ class APITest extends TestCase
             //using withoutMiddleware to avoid throttle error
             $response = $this->withoutMiddleware()->get('/api/algeriancities/communes/'.$daira);
 
-            Log::debug($daira);
             $response->assertStatus(200);
             $response->assertJsonStructure([
                 '*' => [
@@ -134,7 +132,6 @@ class APITest extends TestCase
             //using withoutMiddleware to avoid throttle error
             $response = $this->withoutMiddleware()->get('/api/algeriancities/communes/'.$daira);
 
-            Log::debug($daira);
             $response->assertStatus(200);
             $response->assertJsonStructure([
                 '*' => [
