@@ -35,9 +35,7 @@ Call these json endpoints
         "wilaya_name": "أم البواقي",
         "wilaya_name_ascii": "Oum El Bouaghi"
     },
-    .
-    .
-    .
+
 ]
 ```     
 
@@ -55,9 +53,7 @@ Call these json endpoints
         "daira_name": "المنصورة",
         "daira_name_ascii": "Mansourah"
     },
-    .
-    .
-    .
+
 ]
  ```
  | Verb | URI | Description |
@@ -74,9 +70,7 @@ Call these json endpoints
         "commune_name": "بئر خادم",
         "commune_name_ascii": "Birkhadem"
     },
-    .
-    .
-    .
+
 ]
  ```       
   | Verb | URI | Description |
@@ -99,8 +93,6 @@ Call these json endpoints
         "post_address": "بومرداس - حي 350 مسكن",
         "post_address_ascii": "Cité 350 Logements Boumerdes"
     },
-    .
-    .
-    .
+
 ]
  ```     
