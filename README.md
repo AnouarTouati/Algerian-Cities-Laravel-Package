@@ -105,7 +105,7 @@ Call these json endpoints
  All of these methods return a Collection
 | Mehod | Parameters | Description |
 | :---  | :---:      | ---:        | 
-| wilayas()|         |returns all wilayas|
+| getAllWilayas()|         |returns all wilayas|
 |getDairasUsingWilayaCode() | $wilaya_code | get list of dairas using wilaya's code|
 |getDairasUsingWilayaName() | $wilaya_name | get list of dairas using wilaya's name in arabic or french|
 |getCommunesUsingDairaName() | $daira_name | get list of communes using daira's name in arabic or french|
