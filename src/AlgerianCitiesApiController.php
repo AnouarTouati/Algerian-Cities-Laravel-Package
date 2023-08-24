@@ -13,7 +13,7 @@ class AlgerianCitiesApiController extends Controller
      */
     public function wilayas()
     {
-        $data = AlgerianCities::wilayas();
+        $data = AlgerianCities::getAllwilayas();
         return response(json_encode($data),200)->withHeaders(['Content-Type'=>'application/json']);
     }
     /**

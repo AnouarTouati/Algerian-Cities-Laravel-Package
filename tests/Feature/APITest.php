@@ -50,7 +50,7 @@ class APITest extends TestCase
 
     public function test_get_dairas_using_wilaya_name_ascii(): void
     {
-        $wilayas = AlgerianCities::wilayas()->pluck('wilaya_name_ascii');
+        $wilayas = AlgerianCities::getAllwilayas()->pluck('wilaya_name_ascii');
         foreach($wilayas as $wilaya){
             $response = $this->get('/api/algeriancities/dairas/'.$wilaya);
 
@@ -75,7 +75,7 @@ class APITest extends TestCase
 
     public function test_get_dairas_using_wilaya_name(): void
     {
-        $wilayas = AlgerianCities::wilayas()->pluck('wilaya_name');
+        $wilayas = AlgerianCities::getAllWilayas()->pluck('wilaya_name');
         foreach($wilayas as $wilaya){
             $response = $this->get('/api/algeriancities/dairas/'.$wilaya);
 

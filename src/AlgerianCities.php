@@ -3,7 +3,7 @@ namespace AnouarTouati\AlgerianCitiesLaravel;
 
 class AlgerianCities {
 
-    public static function wilayas(){
+    public static function getAllWilayas(){
         return PostOffice::select('wilaya_code','wilaya_name','wilaya_name_ascii')
                         ->distinct()
                         ->orderBy('wilaya_code','asc')
