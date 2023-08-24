@@ -1,6 +1,6 @@
 # Algerian Cities Laravel Package
 Grew tired of repeating the same step in every project to add address to your forms. I had the same frustration, which why I made this package to get you up and running with just few commands.
-# Acknoledgment
+# Acknowledgment
 [Dataset was taken from this repo](https://github.com/othmanus/algeria-cities)
 # Status
 This package is still under development. Use at your own discretion. You can open an issue for bugs or features you would like to be included in the future. 
