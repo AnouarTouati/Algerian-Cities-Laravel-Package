@@ -110,3 +110,5 @@ Call these json endpoints
 |getDairasUsingWilayaName() | $wilaya_name | get list of dairas using wilaya's name in arabic or french|
 |getCommunesUsingDairaName() | $daira_name | get list of communes using daira's name in arabic or french|
 |getPostsUsingCommuneName() | $commune_name | get list of post offices using commune's name in arabic or french|
+|getAllDairas() |  | get list of all dairas|
+|getAllCommunes() |  | get list of all communes|
