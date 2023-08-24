@@ -7,8 +7,12 @@ This package is still under development. Use at your own discretion. You can ope
 # Instalation
 
 ```php
-composer require  anouar-touati/algerian-cities-laravel:@dev
+composer require  anouar-touati/algerian-cities-laravel:v1.*@BETA
+```
+```php
 php artisan migrate
+```
+```php
 php artisan db:seed --class="AnouarTouati\AlgerianCitiesLaravel\Database\Seeders\AlgerianCitiesSeeder"
 ```
 If auto discovery does not work for you, add this under providers in config/app.php  : 
