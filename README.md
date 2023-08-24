@@ -95,4 +95,18 @@ Call these json endpoints
     },
 
 ]
- ```     
+ ```
+ ## Use through the Facade AlgerianCities
+ you can use the methods that the API controller is built with by including this line to the top of your file :
+
+ ```php 
+ use AnouarTouati\AlgerianCitiesLaravel\AlgerianCities;
+ ```
+ All of these methods return a Collection
+| Mehod | Parameters | Description |
+| :---  | :---:      | ---:        | 
+| wilayas()|         |returns all wilayas|
+|getDairasUsingWilayaCode() | $wilaya_code | get list of dairas using wilaya's code|
+|getDairasUsingWilayaName() | $wilaya_name | get list of dairas using wilaya's name in arabic or french|
+|getCommunesUsingDairaName() | $daira_name | get list of communes using daira's name in arabic or french|
+|getPostsUsingCommuneName() | $commune_name | get list of post offices using commune's name in arabic or french|
