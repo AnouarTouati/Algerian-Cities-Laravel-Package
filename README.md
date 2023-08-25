@@ -79,7 +79,7 @@ Call these json endpoints
  ```       
   | Verb | URI | Description |
 | :--- | :---: | ---: | 
-| Get  | /api/algeriancities/communes/{commune} | Get all post offices at the specified commune name (arabic or french) | 
+| Get  | /api/algeriancities/postoffices/{commune} | Get all post offices at the specified commune name (arabic or french) | 
 #### response format :
 ```json
 [
