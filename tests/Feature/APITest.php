@@ -2,7 +2,7 @@
 
 namespace Tests\Feature;
 
-use AnouarTouati\AlgerianCitiesLaravel\AlgerianCities;
+use AnouarTouati\AlgerianCitiesLaravel\AlgerianCitiesFacade;
 use Tests\TestCase;
 
 class APITest extends TestCase
@@ -50,7 +50,7 @@ class APITest extends TestCase
 
     public function test_get_dairas_using_wilaya_name_ascii(): void
     {
-        $wilayas = AlgerianCities::getAllwilayas()->pluck('wilaya_name_ascii');
+        $wilayas = AlgerianCitiesFacade::getAllwilayas()->pluck('wilaya_name_ascii');
         foreach($wilayas as $wilaya){
             $response = $this->get('/api/algeriancities/dairas/'.$wilaya);
 
@@ -75,7 +75,7 @@ class APITest extends TestCase
 
     public function test_get_dairas_using_wilaya_name(): void
     {
-        $wilayas = AlgerianCities::getAllWilayas()->pluck('wilaya_name');
+        $wilayas = AlgerianCitiesFacade::getAllWilayas()->pluck('wilaya_name');
         foreach($wilayas as $wilaya){
             $response = $this->get('/api/algeriancities/dairas/'.$wilaya);
 
@@ -101,7 +101,7 @@ class APITest extends TestCase
     
     public function test_get_communes_using_daira_name_ascii(): void
     {
-        $dairas = AlgerianCities::getAllDairas()->pluck('daira_name_ascii');
+        $dairas = AlgerianCitiesFacade::getAllDairas()->pluck('daira_name_ascii');
         foreach($dairas as $daira){
             //using withoutMiddleware to avoid throttle error
             $response = $this->withoutMiddleware()->get('/api/algeriancities/communes/'.$daira);
@@ -127,7 +127,7 @@ class APITest extends TestCase
 
     public function test_get_communes_using_daira_name(): void
     {
-        $dairas = AlgerianCities::getAllDairas()->pluck('daira_name');
+        $dairas = AlgerianCitiesFacade::getAllDairas()->pluck('daira_name');
         foreach($dairas as $daira){
             //using withoutMiddleware to avoid throttle error
             $response = $this->withoutMiddleware()->get('/api/algeriancities/communes/'.$daira);
@@ -152,7 +152,7 @@ class APITest extends TestCase
     }
     public function test_get_postoffices_using_commune_name_ascii(): void
     {
-        $communes = AlgerianCities::getAllCommunes()->pluck('commune_name_ascii');
+        $communes = AlgerianCitiesFacade::getAllCommunes()->pluck('commune_name_ascii');
         foreach($communes as $commune){
             //using withoutMiddleware to avoid throttle
             $response = $this->withoutMiddleware()->get('/api/algeriancities/postoffices/'.$commune);
@@ -179,7 +179,7 @@ class APITest extends TestCase
     }
     public function test_get_postoffices_using_commune_name(): void
     {
-        $communes = AlgerianCities::getAllCommunes()->pluck('commune_name');
+        $communes = AlgerianCitiesFacade::getAllCommunes()->pluck('commune_name');
         foreach($communes as $commune){
             //using withoutMiddleware to avoid throttle
             $response = $this->withoutMiddleware()->get('/api/algeriancities/postoffices/'.$commune);

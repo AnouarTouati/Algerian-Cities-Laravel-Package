@@ -3,8 +3,6 @@
 namespace AnouarTouati\AlgerianCitiesLaravel;
 
 use App\Http\Controllers\Controller;
-use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Log;
 
 class AlgerianCitiesApiController extends Controller
 {
@@ -13,7 +11,7 @@ class AlgerianCitiesApiController extends Controller
      */
     public function wilayas()
     {
-        $data = AlgerianCities::getAllwilayas();
+        $data =AlgerianCitiesFacade::getAllwilayas();
         return response(json_encode($data),200)->withHeaders(['Content-Type'=>'application/json']);
     }
     /**
@@ -23,10 +21,10 @@ class AlgerianCitiesApiController extends Controller
     public function dairas($wilaya)
     {
         if(is_numeric($wilaya)){
-            $data = AlgerianCities::getDairasUsingWilayaCode($wilaya);
+            $data = AlgerianCitiesFacade::getDairasUsingWilayaCode($wilaya);
         }
         else{
-            $data = AlgerianCities::getDairasUsingWilayaName($wilaya);
+            $data = AlgerianCitiesFacade::getDairasUsingWilayaName($wilaya);
         }
         if(count($data) == 0){
             return response('Wrong wilaya code or name',400)->withHeaders(['Content-Type'=>'application/json']);
@@ -40,7 +38,7 @@ class AlgerianCitiesApiController extends Controller
     */
     public function communes($daira){
 
-        $data = AlgerianCities::getCommunesUsingDairaName($daira);
+        $data = AlgerianCitiesFacade::getCommunesUsingDairaName($daira);
         if(count($data) == 0){
             return response('Wrong daira name',400)->withHeaders(['Content-Type'=>'application/json']);
         }
@@ -53,7 +51,7 @@ class AlgerianCitiesApiController extends Controller
      */
 
      public function postOffices($commune){
-        $data = AlgerianCities::getPostsUsingCommuneName($commune);
+        $data = AlgerianCitiesFacade::getPostsUsingCommuneName($commune);
         if(count($data) == 0){
             return response('Wrong commune name',400)->withHeaders(['Content-Type'=>'application/json']);
         }

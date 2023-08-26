@@ -10,6 +10,9 @@ class AlgerianCitiesServiceProvider extends ServiceProvider{
     }
 
     public function register(){
-
+        $this->app->bind(AlgerianCities::class,function(){
+            return new AlgerianCities();
+        });
+        
     }
 }
