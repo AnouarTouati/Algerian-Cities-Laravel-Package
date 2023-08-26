@@ -2,6 +2,7 @@
 
 namespace AnouarTouati\AlgerianCitiesLaravel;
 
+use AnouarTouati\AlgerianCitiesLaravel\Facades\AlgerianCitiesFacade;
 use App\Http\Controllers\Controller;
 
 class AlgerianCitiesApiController extends Controller
@@ -11,7 +12,7 @@ class AlgerianCitiesApiController extends Controller
      */
     public function wilayas()
     {
-        $data =AlgerianCitiesFacade::getAllwilayas();
+        $data = AlgerianCitiesFacade::getAllwilayas();
         return response(json_encode($data),200)->withHeaders(['Content-Type'=>'application/json']);
     }
     /**

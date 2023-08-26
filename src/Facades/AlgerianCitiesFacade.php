@@ -1,6 +1,6 @@
 <?php
 
-namespace AnouarTouati\AlgerianCitiesLaravel;
+namespace AnouarTouati\AlgerianCitiesLaravel\Facades;
 
 use AnouarTouati\AlgerianCitiesLaravel\AlgerianCities;
 use Illuminate\Support\Facades\Facade;

@@ -2,7 +2,7 @@
 
 namespace Tests\Feature;
 
-use AnouarTouati\AlgerianCitiesLaravel\AlgerianCitiesFacade;
+use AnouarTouati\AlgerianCitiesLaravel\Facades\AlgerianCitiesFacade;
 use Tests\TestCase;
 
 class APITest extends TestCase
