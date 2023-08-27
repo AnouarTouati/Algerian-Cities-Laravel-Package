@@ -1,7 +1,21 @@
-<select name="wilaya"     id="wilayas"></select>
-<select name="daira"      id="dairas"></select>
-<select name="commune"    id="communes"></select>
-<select name="postoffice" id="postoffices"></select>
+@props(['select_style','label_style'])
+
+<label  style="{{$label_style}}" for="wilayas">Wilaya</label>
+<select style="{{$select_style}}"  name="wilaya" id="wilayas">
+</select>
+
+<label  style="{{$label_style}}" for="dairas">Daira</label>
+<select style="{{$select_style}}"  name="daira" id="dairas">
+</select>
+
+<label  style="{{$label_style}}" for="communes">Commune</label>
+<select style="{{$select_style}}"  name="commune" id="communes">
+</select>
+
+<label  style="{{$label_style}}" for="postoffices">Post Office</label>
+<select style="{{$select_style}}"  name="postoffice" id="postoffices">
+</select>
+<br>
 
 @push('scripts')
     <script>
@@ -93,7 +107,7 @@
         document.querySelectorAll(`#${selectId} option`).forEach(option => option.remove())
         let option = document.createElement('option')
         option.text= '-'  
-        option.value = -1
+        option.value = null
         document.querySelector(`#${selectId}`).add(option)
        }
     </script>
