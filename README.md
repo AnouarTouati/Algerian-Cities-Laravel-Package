@@ -79,7 +79,7 @@ Call these json endpoints
  ```       
   | Verb | URI | Description |
 | :--- | :---: | ---: | 
-| Get  | /api/algeriancities/communes/{commune} | Get all post offices at the specified commune name (arabic or french) | 
+| Get  | /api/algeriancities/postoffices/{commune} | Get all post offices at the specified commune name (arabic or french) | 
 #### response format :
 ```json
 [
@@ -116,6 +116,7 @@ Call these json endpoints
 |getPostsUsingCommuneName() | $commune_name | get list of post offices using commune's name in arabic or french|
 |getAllDairas() |  | get list of all dairas|
 |getAllCommunes() |  | get list of all communes|
+<<<<<<< HEAD
 
 # Built-in address Blade component
 You can add this ready to use component to your form which will provide the HTML dropdowns for selecting the address and the logic to populate them.
@@ -139,3 +140,5 @@ Example:
         <button type="submit">Submit</button>
 </form>
 ```
+=======
+>>>>>>> 4adb6a262a97d8954cfdad6da006ecc5a53a4339
