@@ -100,11 +100,11 @@ Call these json endpoints
 
 ]
  ```
- ## Use through the Facade AlgerianCities
+ ## Use through the AlgerianCitiesFacade
  you can use the methods that the API controller is built with by including this line to the top of your file :
 
  ```php 
- use AnouarTouati\AlgerianCitiesLaravel\AlgerianCities;
+ use AnouarTouati\AlgerianCitiesLaravel\Facades\AlgerianCitiesFacade;
  ```
  All of these methods return a Collection
 | Mehod | Parameters | Description |
@@ -116,3 +116,23 @@ Call these json endpoints
 |getPostsUsingCommuneName() | $commune_name | get list of post offices using commune's name in arabic or french|
 |getAllDairas() |  | get list of all dairas|
 |getAllCommunes() |  | get list of all communes|
+
+# Built-in address Blade component
+You can add this ready to use component to your form which will provide the HTML dropdowns for selecting the address and the logic to populate them. But, you will need to style them by passing values to the `:select_style` and `:label_style` props. As shown below.
+ You also need to have the Blade directive `@stack` with the word script like so `@stack('script')` under the closing body tag if you dont have that already.
+
+Example:
+
+```Blade
+ <form action="/formsubmit" method="get">
+        <p>Please fill this form</p>
+
+        <x-algerian-citites-laravel::address 
+            {{-- The styles below are hideous xD, they are just for demonstartion purposes --}}
+            :select_style="'background:green;color:white;'" 
+            :label_style="'display:block;color:blue;'"
+            />
+
+        <button type="submit">Submit</button>
+</form>
+```
