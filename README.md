@@ -118,8 +118,11 @@ Call these json endpoints
 |getAllCommunes() |  | get list of all communes|
 
 # Built-in address Blade component
-You can add this ready to use component to your form which will provide the HTML dropdowns for selecting the address and the logic to populate them. But, you will need to style them by passing values to the `:select_style` and `:label_style` props. As shown below.
- You also need to have the Blade directive `@stack` with the word script like so `@stack('script')` under the closing body tag if you dont have that already.
+You can add this ready to use component to your form which will provide the HTML dropdowns for selecting the address and the logic to populate them.
+
+ You can add styling by passing values to the `:select_style` and `:label_style` props as shown below.
+
+ You also need to have the Blade directive `@stack` with the word scripts like so `@stack('scripts')` under the closing body tag if you dont have that already.
 
 Example:
 
