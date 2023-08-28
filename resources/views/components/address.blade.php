@@ -1,18 +1,18 @@
 @props(['select_style','label_style'])
 
-<label  style="{{$label_style}}" for="wilayas">Wilaya</label>
+<label  style="{{$label_style}}" for="wilayas">{{trans('algerian-citites-laravel::translations.state')}}</label>
 <select style="{{$select_style}}"  name="wilaya" id="wilayas">
 </select>
 
-<label  style="{{$label_style}}" for="dairas">Daira</label>
+<label  style="{{$label_style}}" for="dairas">{{trans('algerian-citites-laravel::translations.district')}}</label>
 <select style="{{$select_style}}"  name="daira" id="dairas">
 </select>
 
-<label  style="{{$label_style}}" for="communes">Commune</label>
+<label  style="{{$label_style}}" for="communes">{{trans('algerian-citites-laravel::translations.commune')}}</label>
 <select style="{{$select_style}}"  name="commune" id="communes">
 </select>
 
-<label  style="{{$label_style}}" for="postoffices">Post Office</label>
+<label  style="{{$label_style}}" for="postoffices">{{trans('algerian-citites-laravel::translations.post_office')}}</label>
 <select style="{{$select_style}}"  name="postoffice" id="postoffices">
 </select>
 <br>
