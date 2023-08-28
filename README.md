@@ -7,7 +7,7 @@ This package is still under development. Use at your own discretion. You can ope
 # Instalation
 
 ```php
-composer require  anouar-touati/algerian-cities-laravel:v1.*
+composer require  anouar-touati/algerian-cities-laravel
 ```
 ```php
 php artisan migrate
