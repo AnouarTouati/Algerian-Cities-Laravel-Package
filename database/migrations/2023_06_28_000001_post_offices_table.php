@@ -40,5 +40,6 @@ return new class extends Migration
      */
     public function down(): void
     {
+        Schema::drop('post_offices');
     }
 };
