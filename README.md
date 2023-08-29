@@ -145,4 +145,6 @@ English, French and Arabic translations are available by default for the address
 If you want to override the default translations you may do so, 
  publish the file to `lang/vendor/algerian-cities-laravel` by running the following command: 
  
- ```php artisan vendor:publish --tag=algerian-cities-laravel-localization```
+ ```php
+ php artisan vendor:publish --tag=algerian-cities-laravel-localization
+ ```
